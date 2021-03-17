@@ -1,0 +1,58 @@
+
+
+.mainheader {
+    background: #404040;
+    min-height: 50px;
+    border: 1px solid;
+    border-color: white;
+    margin: 5% 0%;
+}
+
+.mainheader a {
+    color: #F06332;
+    padding: 10px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu ul {
+    padding: 0px;
+}
+
+.topheader a {
+    color: #F06332;
+    padding: 10px;
+}
+
+.menu__profile li {
+    display: inline-block;
+}
+
+.menu__profile ul {
+    padding: 0px;
+    float: right;
+    position: relative;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+body {
+    background-color: #282828;
+}
+
+/* Homepage */
+
+.welcome {
+    background-image: url("images/Header-image.jpg");
+    background-size: cover;
+    min-height: 90vh;
+}
+
+/* links */ 
+a {
+    text-decoration: none;
+}
