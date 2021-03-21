@@ -30,7 +30,7 @@ a {
 .container_nav {
   order: 2;
   position: absolute;
-  left: 1400px;
+  left: 1000px;
   top: 20px;
 }
 
@@ -187,7 +187,7 @@ nav {
   border: 1px solid;
   border-color: #ffff;
   top: 55px;
-  right: 200px;
+  right: 21px;
 }
 
 .view-more:hover {
@@ -383,6 +383,7 @@ nav {
   padding: 10px;
   position: relative;
   left: 30px;
+  width: 80px;
 }
 
 .pre-purchase_products p {
@@ -440,9 +441,126 @@ a {
   text-decoration: none;
 }
 
+/* footer */
+footer {
+  color: #ffff;
+  text-align: left;
+}
+
 /* media */
 
 @media (min-width: 600px) {
+  .welcome {
+    min-height: 60vh;
+  }
+
+  .fa-heart {
+    left: 700px;
+    font-size: 20px;
+  }
+  .fa-shopping-bag {
+    left: 740px;
+    font-size: 20px;
+  }
+  .welcome_content {
+    top: 200px;
+    left: 500px;
+  }
+  .cta_big {
+    font-size: 0.8em;
+  }
+  .discover_gametext {
+    flex-basis: 800px;
+  }
+  .discover img {
+    width: 590px;
+  }
+
+  .discover-container {
+    justify-content: left;
+  }
+
+  .hot-now {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .discover-container {
+    flex-wrap: nowrap;
+    position: relative;
+  }
+
+  .discover_gametext {
+    flex-basis: 90x;
+    height: 280px;
+    flex-direction: row;
+  }
+
+  .discover img {
+    width: 500px;
+  }
+
+  .info-product {
+    font-size: 0.2em;
+    width: 250px;
+    position: absolute;
+    left: 550px;
+    top: 50px;
+  }
+
+  .discover_cta-small {
+    order: 3;
+    width: 20px;
+    align-self: center;
+    position: absolute;
+    left: 630px;
+    top: 170px;
+  }
+
+  .game-header {
+    font-size: 1em;
+    position: absolute;
+    left: 620px;
+    top: 10px;
+  }
+
+  .info-product {
+    font-size: 1em;
+  }
+
+  .news {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pre-purchase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sell-container {
+    flex-wrap: nowrap;
+    position: relative;
+  }
+
+  .sell_gametext {
+    flex-basis: 90x;
+    height: 280px;
+    flex-direction: row;
+  }
+
+  .sell img {
+    width: 500px;
+  }
+
+  .sell_cta-small {
+    order: 3;
+    width: 20px;
+    align-self: center;
+    position: absolute;
+    left: 630px;
+    top: 170px;
+  }
+}
+
+@media (min-width: 890px) {
   h1 {
     width: 500px;
     text-align: start;
@@ -453,12 +571,12 @@ a {
   }
 
   .fa-heart {
-    left: 1700px;
+    left: 1300px;
     font-size: 20px;
   }
 
   .fa-shopping-bag {
-    left: 1740px;
+    left: 1340px;
     font-size: 20px;
   }
 
@@ -472,15 +590,61 @@ a {
 
   .discover-container {
     flex-wrap: nowrap;
+    position: relative;
   }
 
   .discover img {
-    width: 1000px;
+    width: 900px;
   }
 
   .discover_gametext {
-    flex-basis: 1000px;
+    flex-basis: 900px;
     flex-direction: column;
+    height: 505px;
+  }
+
+  .info-product {
+    position: absolute;
+    left: 1015px;
+    top: 100px;
+  }
+  .discover_cta-small {
+    position: absolute;
+    left: 1060px;
+    top: 250px;
+  }
+
+  .game-header {
+    position: absolute;
+    left: 1015px;
+    top: 40px;
+    font-size: x-large;
+  }
+
+  .sell-container {
+    flex-wrap: nowrap;
+    position: relative;
+  }
+
+  .sell img {
+    width: 900px;
+  }
+
+  .sell_gametext {
+    flex-basis: 900px;
+    flex-direction: column;
+    height: 505px;
+  }
+
+  .info-product {
+    position: absolute;
+    left: 1000px;
+    top: 100px;
+  }
+  .sell_cta-small {
+    position: absolute;
+    left: 1055px;
+    top: 250px;
   }
 
   .news {
@@ -491,19 +655,6 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .sell-container {
-    flex-wrap: nowrap;
-  }
-
-  .sell_gametext {
-    flex-basis: 1000px;
-    flex-direction: column;
-  }
-
-  .sell img {
-    width: 1000px;
-  }
-
   .welcome {
     background-size: cover;
     min-height: 90vh;
@@ -511,12 +662,12 @@ a {
 
   .welcome_content {
     top: 400px;
-    left: 1300px;
+    left: 1000px;
   }
 
   .welcome h1 {
-    font-size: 1.5em;
-    width: 500px;
+    font-size: 1em;
+    width: 400px;
   }
 
   .cta_big {
@@ -538,5 +689,6 @@ a {
   .cta-small {
     font-size: 1em;
     padding: 10px 50px;
+    width: 60px;
   }
 }
