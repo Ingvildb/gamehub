@@ -5,45 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Buy, sell and discover the best games on Game Hub" />
+    <script src="https://kit.fontawesome.com/3c108aec67.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <title>Game Hub | Home</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <section class="topheader">
-                <h1>Disover, buy and sell your game</h1>
-            </section>
-            <section>  
+             <div class="container_textheader">
+                  <h1>Discover, buy and sell your game</h1>
+            </div>
+            <div class="container_nav">
+                <div class="nav__links">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Join Us</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div> 
+            </div>
+        </div>
+                
+
+        <section class="mainheader">
+          <img class="logo" src="images/gamehub-logo.png" alt="Game Hub logo" class="logo">
+          
+             <div class="mainheader_nav">
                 <nav>
                     <ul class="nav__links">
+                        <li> <a href="games.html">Games</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="sell.html">Sell</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                    </ul>
+               </nav>
+            </div>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-shopping-bag"></i>     
+           </div>
+        </section>
+
+        <section class="hamburger-menu_nav">
+            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu">
+            <nav>
+                <ul>
+                    <li> <a href="games.html">Games</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="sell.html">Sell</a></li>
+                        <li><a href="forum.html">Forum</a></li>
                         <li><a href="#">Sign In</a></li>
                         <li><a href="#">Join Us</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                </section>
-        </div>
-        <section class="mainheader">
-          <img class="logo" src="images/gamehub-logo.png" alt="Game Hub logo" class="logo">
-         <nav class="menu">
-             <ul class="nav__links">
-                 <li> <a href="games.html">Games</a></li>
-                 <li><a href="news.html">News</a></li>
-                 <li><a href="sell.html">Sell</a></li>
-                 <li><a href="forum.html">Forum</a></li>
-             </ul>
-        </nav>
+                </ul>
+            </nav>
         </section>
 
         <section class="welcome">
             <div class="welcome_content">
-                <a href="#" class="cta_big">Game 34</a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat illum totam et magnam</p>
-            </section>
+                <h1>Game 34 Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+                <a href="#" class="cta_big">View game</a>
+                
             </div>
-           
+        </section>
     </header>
 
 <main>
@@ -70,20 +98,19 @@
     </section>
 
  
-    <section class="discover"> 
-        <h2>Discover</h2>
-        <div>
+    
+    <section class="discover">
+            <h2>Discover</h2>
+        <div class="discover-container">
             <div class="discover_image">
                 <img src="images/Game-image-1.jpeg" alt="Game 1 image">
-            </div>
-
+            </div>  
          <div class="discover_gametext">
-                <p>Computer Game 1</p>
-                <a href="#" class="cta-small">View</a>
-                <a href="#">Learn More</a>
+                <p class="game-header">Computer Game 1</p>
+                <a href="#" class="cta-small discover_cta-small">View</a>
+                    <p class="info-product">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora minus magnam, accusantium quo quaerat.</p>
             </div>
         </div>
-       
     </section>
 
     <section class="news">
@@ -91,25 +118,25 @@
         <a class="view-more" href="#"> View More</a>
         <div class="news_products">
             <img src="images/Game-image-1.jpeg" alt="Game 1 image"/>
-            <a href="#">Game 1</a>
+             <a href="#">Game 1</a>
             <p>299 nok</p>
             <a class="cta-small">View</a>
         </div>
         <div class="news_products">
             <img src="images/Game-image-2.jpeg" alt="Game 2 image"/>
-            <a href="#">Game 2</a>
+            <a href="#">Game 1</a>
             <p>299 nok</p>
             <a class="cta-small">View</a>
         </div>
         <div class="news_products">
             <img src="images/Game-image-3.jpeg" alt="Game 3 image"/>
-            <a href="#">Game 3</a>
+             <a href="#">Game 1</a>
             <p>299 nok</p>
             <a class="cta-small">View</a>
         </div>
         <div class="news_products">
             <img src="images/Game-image-1.jpeg" alt="Game 1 image"/>
-            <a href="#">Game 4</a>
+             <a href="#">Game 1</a>
             <p>299 nok</p>
             <a class="cta-small">View</a>
         </div>
@@ -136,18 +163,22 @@
             <p>299 nok</p>
             <a href="#" class="cta-small">View</a>
         </div>
+    </section>
 
-        <section class="sell__homepage"> 
+
+        <section class="sell">
             <h2>Sell your finished game</h2>
-            <div>
+        <div class="sell-container">
+            <div class="sell_image">
                 <img src="images/Game-image-1.jpeg" alt="Game 1 image"/>
+            </div>  
+         <div class="sell_gametext">
+                <p class="game-header">Computer Game 1</p>
+                <a href="#" class="cta-small sell_cta-small">View</a>
+                    <p class="info-product">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora minus magnam, accusantium quo quaerat.</p>
             </div>
-            <div>
-                <p>Computer Game 1</p>
-                <a href="#"class="cta-small">View</a>
-                <a href="#">Learn More</a>
-            </div>
-        </section>
+        </div>
+    </section>
 </main>
 </body>
 </html>
