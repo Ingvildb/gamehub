@@ -180,95 +180,81 @@ h2 {
   align-items: center;
 }
 
-/* TOP CONTAINER */
-
+/* CONTAINER */
 .top-container {
   display: grid;
   grid-gap: 20px;
-  padding: 30px;
-  margin: 20px;
   grid-template-areas:
-    "filter covergame covergame"
-    "filter covergame covergame";
+    "container-1 container-2 container-3"
+    "container-1 container-2 container-3";
+  margin: 30px;
+  padding: 0px 50px 0px 0px;
 }
 
-.filter {
-  grid-area: filter;
+.container-1 img {
+  width: 400px;
 }
 
-.covergame {
-  grid-area: covergame;
-  min-height: 400px;
-  background: url(../images/Game-image-2.jpeg);
-  background-size: cover;
-  background-position: center;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  justify-content: center;
+.container-1 {
+  grid-area: container-1;
 }
 
-.covergame h1 {
-  font-size: 2em;
+.container-2 {
+  grid-area: container-2;
+}
+
+.container-3 {
+  grid-area: container-3;
+}
+
+.box {
   color: #ffff;
-}
-
-.covergame p {
-  font-size: 1.2em;
-  color: #ffff;
-}
-
-.filter {
-  border: 1px solid;
-  border-color: #f06332;
-  color: #ffff;
-  width: 300px;
-}
-
-.filter h3 {
-  font-size: 1em;
-  font-weight: bolder;
-}
-
-.filter ul {
+  background-color: #707070;
+  width: 400px;
+  padding: 4px;
   margin: 10px;
 }
 
-.filter li {
-  padding: 20px;
-  text-decoration: none;
-  list-style: none;
+.box p {
+  font-size: 1em;
 }
 
-.filter a {
+/* BUTTONS CONTAINER*/
+.btns {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.browse-games-btn {
+  color: #ffff;
+  border: 1px solid;
+  border-color: #f06332;
+  padding: 20px;
+  text-align: center;
+}
+
+.browse-games-btn a {
   font-size: 1.5em;
 }
 
-.fa-square-full {
-  padding: 10px;
-}
-
-/* GAMEBOXES */
-
-.gameboxes {
+/* RECENTLY BOUGHT */
+.recently-bought-box {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(5, 1fr);
-  padding: 40px;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px;
   margin: 20px;
 }
 
-.gameboxes img {
+.recently-bought img {
   width: 100%;
 }
 
-.gameboxes p {
+.recently-bought h3 {
   color: #ffff;
-}
-
-.cta-gameboxes {
-  display: flex;
-  flex-basis: 100px;
-  justify-content: center;
+  text-align: left;
+  font-size: 1em;
+  padding: 10px 0px 0px 50px;
 }

@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3c108aec67.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/checkout.css">
     <title>Game Hub | Check Out</title>
 </head>
 <body>
     <header>
-        <div class="wrapper-1">
+        <section class="wrapper">
+            <div class="container_textheader">
+                <h1>Discover, buy and sell your game</h1>
+          </div>
             <!-- Navigation -->
-            <nav class="main-nav-1">
+            <nav class="main-nav-2">
                 <ul>
                     <li> <a href="#">Games</a></li>
                     <li> <a href="#">News</a></li>
@@ -19,8 +23,9 @@
                     <li> <a href="#">Forum</a></li>
                 </ul>
             </nav>
-        
-            <nav class="main-nav-2">
+        </section>
+            <section class="menu">
+            <nav class="main-nav-1">
                 <ul>
                     <li> <a href="#">Sign in</a></li>
                     <li> <a href="#">Join us</a></li>
@@ -28,54 +33,62 @@
                     <li> <a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <img class="logo" src="images/gamehub-logo.png" alt="Game Hub logo" class="logo">
+
+
+            <div class="icons">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-shopping-bag"></i>     
+           </div>
+        </section>
 
             <section class="back-search">
                 <a href="#" class="btn-back">Back</a>
                 <a href="#" class="search">Search</a>
             </section>
-        </div>
-    </header>
+    </div>
+</header>
             
     <main>
         <!-- Top Container -->
         <section class="check-out-container">
-            <div class="product-co">
+            <div class="co-box">
                 <h3>Product</h3>
-                <img src="#" alt="#">
                 <a href="#">Game 4</a>
+                <img src="images/Game-image-2.jpeg" alt="#">
             </div>
-            <div class="price-co">
+            <div class="co-box">
                 <h3>Price</h3>
                 <p>299 Nok</p>
             </div>
-            <div class="type-co">
+            <div class="co-box">
                 <h3>Type</h3>
                 <p>Download</p>
             </div>
-            <div class="quantity-co">
+            <div class="co-box">
                 <h3>Quantity</h3>
                 <p>1 stk</p>
             </div>
-            <div class="sum-co">
+            <div class="co-box">
                 <h3>Sum</h3>
                 <p>299 Nok</p>
             </div>
-            <div class="remove-co">
+            <div class="co-box">
                 <h3>Remove</h3>
                 <a href="#"><i class="fas fa-trash-alt"></i></a>
             </div>
         </section>
 
         <section class="check-out-total">
-            <div class="sum-total">
+            <div class="co-total">
                 <h3>Sum</h3>
                 <p>299 Nok</p>
             </div>
-            <div class="shipping-total">
+            <div class="co-total">
                 <h3>Shipping</h3>
                 <p>0 Nok</p>
             </div>
-            <div class="total-total">
+            <div class="co-total totalprice">
                 <h3>Total</h3>
                 <p>299 Nok</p>
             </div>
