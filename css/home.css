@@ -110,6 +110,14 @@ h2 {
   align-items: center;
 }
 
+.fa-bars {
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
 .icons {
   display: grid;
   grid-gap: 20px;
@@ -191,9 +199,8 @@ h2 {
 
 .covergame {
   position: absolute;
-  text-align: right;
   top: 400px;
-  left: 1000px;
+  left: 800px;
   text-align: center;
 }
 
@@ -375,4 +382,153 @@ h2 {
 .sell_gametext a {
   flex-basis: 500px;
   text-align: left;
+}
+
+@media (max-width: 700px) {
+  /*  NAVIGATION */
+
+  .main-nav-2 a {
+    font-size: 10px;
+  }
+
+  .main-nav-1 {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 35px;
+    color: #f06332;
+    grid-column: 1;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    grid-column: 3;
+  }
+
+  /* HOMEPAGE HEADER */
+  .top-container {
+    min-height: 40vh;
+  }
+
+  .covergame {
+    position: absolute;
+    top: 160px;
+    left: 10px;
+    text-align: center;
+  }
+
+  .top-container h1 {
+    font-size: 1em;
+    width: 150px;
+    background-color: #b9b8b8;
+    color: #282828;
+    justify-items: center;
+  }
+
+  .top-container p {
+    display: none;
+  }
+
+  /* HOT NOW  */
+  .hot-now {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  /* DISCOVER */
+  .discover {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+
+  .discover_cta-small {
+    position: absolute;
+  }
+
+  /* NEWS */
+  .news_boxes {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  /* PRE-PURCHASE */
+  .boxes_pre-purchase {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  /*  SELL YOUR GAME */
+  .sell {
+    grid-template-columns: 1fr;
+  }
+
+  .sell_cta-small {
+    position: absolute;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* HOMEPAGE HEADER */
+
+  .top-container {
+    min-height: 60vh;
+  }
+
+  .covergame {
+    position: absolute;
+    top: 270px;
+    left: 10px;
+    text-align: center;
+  }
+
+  .top-container h1 {
+    font-size: 1.2em;
+    width: 200px;
+    background-color: #b9b8b8;
+    color: #282828;
+    justify-items: center;
+  }
+
+  .top-container p {
+    display: none;
+  }
+
+  /* HOT NOW  */
+  .hot-now {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+
+  /* DISCOVER */
+  .discover {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+
+  .discover_cta-small {
+    position: absolute;
+  }
+
+  /* NEWS */
+  .news_boxes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+
+  /* PRE-PURCHASE */
+  .boxes_pre-purchase {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+
+  /*  SELL YOUR GAME */
+  .sell {
+    grid-template-columns: 1fr;
+  }
+
+  .sell_cta-small {
+    position: absolute;
+  }
 }
