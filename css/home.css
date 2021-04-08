@@ -384,6 +384,70 @@ h2 {
   text-align: left;
 }
 
+@media (max-width: 1200px) {
+  /* HOMEPAGE HEADER */
+
+  .top-container {
+    min-height: 60vh;
+  }
+
+  .covergame {
+    position: absolute;
+    top: 270px;
+    left: 10px;
+    text-align: center;
+  }
+
+  .top-container h1 {
+    font-size: 1.2em;
+    width: 200px;
+    background-color: #b9b8b8;
+    color: #282828;
+    justify-items: center;
+  }
+
+  .top-container p {
+    display: none;
+  }
+
+  /* HOT NOW  */
+  .hot-now {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+
+  /* DISCOVER */
+  .discover {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+
+  .discover_cta-small {
+    position: absolute;
+  }
+
+  /* NEWS */
+  .news_boxes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+
+  /* PRE-PURCHASE */
+  .boxes_pre-purchase {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+
+  /*  SELL YOUR GAME */
+  .sell {
+    grid-template-columns: 1fr;
+  }
+
+  .sell_cta-small {
+    position: absolute;
+  }
+}
+
 @media (max-width: 700px) {
   /*  NAVIGATION */
 
@@ -456,70 +520,6 @@ h2 {
   /* PRE-PURCHASE */
   .boxes_pre-purchase {
     grid-template-columns: 1fr;
-    grid-gap: 50px;
-  }
-
-  /*  SELL YOUR GAME */
-  .sell {
-    grid-template-columns: 1fr;
-  }
-
-  .sell_cta-small {
-    position: absolute;
-  }
-}
-
-@media (max-width: 1200px) {
-  /* HOMEPAGE HEADER */
-
-  .top-container {
-    min-height: 60vh;
-  }
-
-  .covergame {
-    position: absolute;
-    top: 270px;
-    left: 10px;
-    text-align: center;
-  }
-
-  .top-container h1 {
-    font-size: 1.2em;
-    width: 200px;
-    background-color: #b9b8b8;
-    color: #282828;
-    justify-items: center;
-  }
-
-  .top-container p {
-    display: none;
-  }
-
-  /* HOT NOW  */
-  .hot-now {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-  }
-
-  /* DISCOVER */
-  .discover {
-    grid-template-columns: 1fr;
-    grid-gap: 0px;
-  }
-
-  .discover_cta-small {
-    position: absolute;
-  }
-
-  /* NEWS */
-  .news_boxes {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-  }
-
-  /* PRE-PURCHASE */
-  .boxes_pre-purchase {
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
   }
 
