@@ -117,6 +117,10 @@ h2 {
   grid-template-columns: repeat(2, 20px);
 }
 
+#hamburger-menu {
+  display: none;
+}
+
 .fa-heart {
   color: #f06332;
   font-size: 20px;
@@ -184,27 +188,12 @@ h2 {
 .top-container {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas:
-    "container-1 container-2 container-3"
-    "container-1 container-2 container-3";
+  grid-template-columns: repeat(3, 1fr);
   margin: 30px;
-  padding: 0px 50px 0px 0px;
 }
 
 .container-1 img {
   width: 400px;
-}
-
-.container-1 {
-  grid-area: container-1;
-}
-
-.container-2 {
-  grid-area: container-2;
-}
-
-.container-3 {
-  grid-area: container-3;
 }
 
 .box {
@@ -237,6 +226,7 @@ h2 {
 
 .browse-games-btn a {
   font-size: 1.5em;
+  text-transform: uppercase;
 }
 
 /* RECENTLY BOUGHT */
@@ -257,4 +247,78 @@ h2 {
   text-align: left;
   font-size: 1em;
   padding: 10px 0px 0px 50px;
+}
+
+@media (max-width: 1300px) {
+  .top-container {
+    grid-template-columns: repeat(3);
+    grid-gap: 10px;
+  }
+
+  .container-1 img {
+    width: 300px;
+  }
+
+  .box {
+    width: 200px;
+  }
+
+  h3 {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 800px) {
+  /*  NAVIGATION */
+
+  .main-nav-2 a {
+    font-size: 10px;
+  }
+
+  .main-nav-1 {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 35px;
+    color: #f06332;
+    grid-column: 1;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    grid-column: 3;
+  }
+
+  /* TOP CONTAINER */
+
+  .top-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  h3 {
+    font-size: 0.8em;
+  }
+
+  .container-1 img {
+    width: 400px;
+  }
+
+  .box {
+    width: 300px;
+  }
+
+  .btns {
+    grid-template-columns: repeat(3, 100px);
+  }
+
+  .browse-games-btn a {
+    font-size: 1em;
+  }
+
+  .recently-bought-box {
+    grid-template-columns: 1fr;
+  }
 }

@@ -15,13 +15,13 @@ a {
   text-decoration: none;
 }
 
-h2 {
+/*h2 {
   color: #ffff;
   font-size: 1.3em;
   font-weight: 900;
   grid-column: -1/1;
   margin: 10px 10px 10px 10px;
-}
+}*/
 
 .cta-big {
   color: white;
@@ -110,15 +110,19 @@ h2 {
   align-items: center;
 }
 
+.fa-bars {
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
 .icons {
   display: grid;
   grid-gap: 20px;
   padding: 10px;
   grid-template-columns: repeat(2, 20px);
-}
-
-#hamburger-menu {
-  display: none;
 }
 
 .fa-heart {
@@ -184,58 +188,44 @@ h2 {
   align-items: center;
 }
 
-/* MAIN */
+/*  CONTACT FORM */
 
-.wrapper-2 {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-rows: 1fr;
+main h1 {
+  color: #707070;
+  text-transform: uppercase;
+  font-size: 6em;
+  display: flex;
   justify-content: center;
-  justify-items: center;
 }
 
-.wrapper-2 h1,
-p {
+h2 {
+  color: #ffff;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 30px 0px;
+  text-decoration: underline;
+}
+
+label {
   color: #ffff;
 }
 
-.wrapper-2 p {
-  padding: 0px 50px;
-  margin: 40px 0px;
+textarea,
+input {
+  background-color: #707070;
+  padding: 20px;
 }
 
-.wrapper-2 i {
-  color: #6cc136;
-  font-size: 3em;
+#message {
+  padding: 40px;
 }
 
-/* BTNS CONTAINER*/
-
-.btns {
+.contactform {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(2, 400px);
+  grid-template-columns: 500px;
   justify-content: center;
-  justify-items: center;
-}
-
-.btn {
-  border: 1px solid;
-  border-color: #f06332;
-  padding: 10px 40px;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-@media (max-width: 1200px) {
-  .btns {
-    grid-template-columns: repeat(2, 300px);
-    grid-gap: 20px;
-  }
-
-  .btn {
-    font-size: 1.3em;
-  }
+  grid-gap: 20px;
 }
 
 @media (max-width: 700px) {
@@ -261,14 +251,13 @@ p {
     grid-column: 3;
   }
 
-  /* MAIN CONTAINER */
+  /* contact form */
 
-  .btns {
-    grid-template-columns: repeat(2, 250px);
-    grid-gap: 20px;
+  main h1 {
+    font-size: 4em;
   }
 
-  .btn {
-    font-size: 1em;
+  .contactform {
+    grid-template-columns: 350px;
   }
 }

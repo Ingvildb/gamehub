@@ -117,6 +117,10 @@ h2 {
   grid-template-columns: repeat(2, 20px);
 }
 
+#hamburger-menu {
+  display: none;
+}
+
 .fa-heart {
   color: #f06332;
   font-size: 20px;
@@ -254,4 +258,41 @@ h2 {
 .send-order {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .check-out-container {
+    grid-template-columns: repeat(6, 50px);
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 700px) {
+  /*  NAVIGATION */
+
+  .main-nav-2 a {
+    font-size: 10px;
+  }
+
+  .main-nav-1 {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 35px;
+    color: #f06332;
+    grid-column: 1;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    grid-column: 3;
+  }
+
+  /*  CONTAINER*/
+  .check-out-container {
+    grid-template-columns: 1fr;
+    font-size: 1em;
+  }
 }
