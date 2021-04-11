@@ -264,6 +264,12 @@ h2 {
 
 /* GAMEBOXES */
 
+.fa-filter {
+  color: #f06332;
+  font-size: 1em;
+  padding: 10px 10px 10px 30px;
+}
+
 .gameboxes {
   display: grid;
   grid-gap: 20px;
