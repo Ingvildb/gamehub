@@ -267,6 +267,15 @@ p {
   text-transform: uppercase;
 }
 
+/* footer */
+footer {
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  padding: 90px;
+  margin: 10px;
+}
+
 @media (max-width: 1200px) {
   .btns {
     grid-template-columns: repeat(2, 300px);

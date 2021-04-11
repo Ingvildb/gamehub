@@ -328,6 +328,15 @@ a {
   color: #dbd07a;
 }
 
+/* footer */
+footer {
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  padding: 90px;
+  margin: 10px;
+}
+
 @media (max-width: 1200px) {
   /*  TOP CONTAINER */
   .top-container {

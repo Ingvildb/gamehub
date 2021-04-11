@@ -297,6 +297,15 @@ h1 {
   padding: 10px 0px 0px 50px;
 }
 
+/* footer */
+footer {
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  padding: 90px;
+  margin: 10px;
+}
+
 @media (max-width: 1300px) {
   .top-container {
     grid-template-columns: repeat(3);
