@@ -308,7 +308,6 @@ footer {
 
 @media (max-width: 1300px) {
   .top-container {
-    grid-template-columns: repeat(3);
     grid-gap: 10px;
   }
 

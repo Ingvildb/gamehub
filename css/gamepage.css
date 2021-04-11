@@ -298,7 +298,7 @@ h2 {
 
 .about-game {
   display: grid;
-  grid-template-rows: repeat(4, ifr);
+  grid-template-rows: repeat(4, 1fr);
   border: 1px solid;
   border-color: #f06332;
   margin: 50px;
@@ -316,7 +316,7 @@ h3 {
 /* REVIEWS */
 .reviews {
   display: grid;
-  grid-template-rows: repeat(1fr);
+  grid-template-rows: 1fr;
 }
 
 .review-1 p,
