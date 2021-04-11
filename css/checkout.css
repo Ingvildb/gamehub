@@ -121,6 +121,10 @@ h2 {
   display: none;
 }
 
+.fa-bars {
+  display: none;
+}
+
 .fa-heart {
   color: #f06332;
   font-size: 20px;
@@ -184,6 +188,42 @@ h2 {
   align-items: center;
 }
 
+.search-btn {
+  font-size: 1em;
+  border: 1px solid;
+  border-color: #ffff;
+  border-radius: 50px;
+  padding: 5px 40px;
+  margin: 0px 20px 30px 0px;
+}
+
+.fa-chevron-left {
+  font-size: 2em;
+}
+
+.fa-search {
+  margin: 10px;
+}
+
+.back {
+  display: grid;
+  justify-content: left;
+  padding: 10px;
+}
+
+.back :hover {
+  color: #f06332;
+}
+
+.search {
+  display: grid;
+  justify-content: right;
+}
+
+.back-search :hover {
+  color: #f06332;
+}
+
 /* CHECK OUT CONTAINER */
 .check-out-container {
   display: grid;
@@ -191,7 +231,7 @@ h2 {
   grid-template-columns: repeat(6, 150px);
   border: 1px solid;
   border-color: #ffff;
-  padding: 20px;
+  padding: 10px;
   margin: 50px;
 }
 
@@ -200,7 +240,15 @@ h2 {
   font-size: 1.2em;
 }
 
-.co-box h3 {
+h1 {
+  color: #ffff;
+  font-size: 2em;
+  display: flex;
+  justify-content: left;
+  padding: 20px;
+}
+
+.co-box h2 {
   font-weight: bolder;
   font-style: normal;
   font-size: 0.8em;
@@ -278,6 +326,19 @@ h2 {
     display: none;
   }
 
+  #hamburger-menu:checked ~ .main-nav-1 {
+    display: block;
+  }
+
+  .main-nav-1 ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav-1 li {
+    padding: 10px;
+  }
+
   .fa-bars {
     display: block;
     font-size: 35px;
@@ -294,5 +355,52 @@ h2 {
   .check-out-container {
     grid-template-columns: 1fr;
     font-size: 1em;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-nav-2 a {
+    font-size: 0.4em;
+  }
+
+  .main-nav-1 {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ .main-nav-1 {
+    display: block;
+  }
+
+  .main-nav-1 ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav-1 li {
+    padding: 5px;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 35px;
+    color: #f06332;
+    grid-column: 1;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    grid-column: 3;
+  }
+
+  .container_textheader {
+    font-size: 0.3em;
+  }
+
+  .send-order a {
+    font-size: 1em;
+  }
+
+  .check-out-total {
+    grid-template-columns: 1fr;
   }
 }

@@ -117,6 +117,14 @@ h2 {
   grid-template-columns: repeat(2, 20px);
 }
 
+#hamburger-menu {
+  display: none;
+}
+
+.fa-bars {
+  display: none;
+}
+
 .fa-heart {
   color: #f06332;
   font-size: 20px;
@@ -124,10 +132,6 @@ h2 {
 
 .fa-heart:hover {
   color: #ffff;
-}
-
-#hamburger-menu {
-  display: none;
 }
 
 .fa-shopping-bag {
@@ -184,6 +188,42 @@ h2 {
   align-items: center;
 }
 
+.search-btn {
+  font-size: 1em;
+  border: 1px solid;
+  border-color: #ffff;
+  border-radius: 50px;
+  padding: 5px 40px;
+  margin: 0px 20px 30px 0px;
+}
+
+.fa-chevron-left {
+  font-size: 2em;
+}
+
+.fa-search {
+  margin: 10px;
+}
+
+.back {
+  display: grid;
+  justify-content: left;
+  padding: 10px;
+}
+
+.back :hover {
+  color: #f06332;
+}
+
+.search {
+  display: grid;
+  justify-content: right;
+}
+
+.back-search :hover {
+  color: #f06332;
+}
+
 /* TOP CONTAINER*/
 
 .top-container {
@@ -201,6 +241,10 @@ h2 {
   min-height: 400px;
   grid-column: 1/3;
   width: 1000px;
+}
+
+.game11 img {
+  width: 100%;
 }
 
 .game11 h1 {
@@ -342,6 +386,19 @@ a {
     display: none;
   }
 
+  #hamburger-menu:checked ~ .main-nav-1 {
+    display: block;
+  }
+
+  .main-nav-1 ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav-1 li {
+    padding: 10px;
+  }
+
   .fa-bars {
     display: block;
     font-size: 35px;
@@ -390,5 +447,52 @@ a {
 
   .buy-game p {
     padding: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-nav-2 a {
+    font-size: 0.4em;
+  }
+
+  .main-nav-1 {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ .main-nav-1 {
+    display: block;
+  }
+
+  .main-nav-1 ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav-1 li {
+    padding: 5px;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 25px;
+    color: #f06332;
+    grid-column: 1;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    grid-column: 3;
+  }
+
+  .container_textheader {
+    font-size: 0.3em;
+  }
+
+  .menu {
+    grid-gap: 0px;
+  }
+
+  .wrapper {
+    grid-gap: 0px;
   }
 }

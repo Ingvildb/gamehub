@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
 body {
+  box-sizing: border-box;
   font-family: Montserrat;
   background-color: #282828;
 }
@@ -9,149 +10,20 @@ li,
 a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 13px;
   color: #ffff;
   text-decoration: none;
 }
 
-.container {
-  display: flex;
-  padding: 30px 20px;
-  flex-wrap: wrap;
-}
-
-.container_textheader {
-  order: 1;
-  position: absolute;
-  left: 40%;
-  top: 20px;
-}
-
-.container_nav {
-  order: 2;
-  position: absolute;
-  left: 1000px;
-  top: 20px;
-}
-
-h1 {
-  color: #b9b8b8;
-  font-size: small;
-  font-style: normal;
-  font-weight: 300;
-  width: 200px;
-  padding: 5px 1%;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.mainheader {
-  display: flex;
-  position: relative;
-  justify-content: left;
-  align-items: center;
-  padding: 5px 10px;
-  margin: 5px 0px 50px 0px;
-  box-sizing: border-box;
-  background: #404040;
-}
-
-.fa-heart {
-  color: #f06332;
-  position: absolute;
-  left: 400px;
-  font-size: 15px;
-}
-
-.fa-heart:hover {
+h2 {
   color: #ffff;
+  font-size: 1.3em;
+  font-weight: 900;
+  grid-column: -1/1;
+  margin: 10px 10px 10px 10px;
 }
 
-.fa-shopping-bag {
-  color: #f06332;
-  position: absolute;
-  left: 430px;
-  font-size: 15px;
-}
-
-.fa-shopping-bag:hover {
-  color: #ffff;
-}
-
-.menu_profile ul {
-  align-items: center;
-  padding: 2px 1%;
-}
-
-.logo {
-  cursor: pointer;
-  max-width: 100px;
-}
-
-nav {
-  display: none;
-}
-
-.nav__links {
-  list-style: none;
-}
-
-.nav__links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav__links li a {
-  transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-  color: #f06332;
-}
-
-.hamburger-menu_nav {
-  position: relative;
-}
-
-.fa-bars {
-  position: fixed;
-  top: 100px;
-  left: 25px;
-  font-size: 26px;
-}
-
-.hamburger-menu_nav ul {
-  list-style: none;
-}
-
-/* Homepage HEADER */
-
-.welcome {
-  background-image: url("../images/Header-image.jpg");
-  background-size: cover;
-  min-height: 30vh;
-  position: relative;
-}
-
-.welcome_content {
-  position: absolute;
-  text-align: right;
-  top: 120px;
-  left: 250px;
-  text-align: center;
-}
-
-.welcome h1 {
-  font-size: 0.7em;
-  margin: 20px 0px;
-  font-weight: bolder;
-  color: #ffff;
-  width: 200px;
-  background-color: #404040;
-}
-
-.cta_big {
+.cta-big {
   color: white;
   text-transform: uppercase;
   background-color: #f06332;
@@ -160,7 +32,7 @@ nav {
   border-radius: 20px;
 }
 
-.cta_big:hover {
+.cta-big:hover {
   color: #ffff;
   background-color: #404040;
 }
@@ -169,526 +41,570 @@ nav {
   text-transform: uppercase;
   font-size: 0.8em;
   padding: 10px 30px;
-  margin: 10px;
+  margin: 5px;
   border-color: #ffff;
   border: 1px solid;
   text-align: center;
+}
+
+.cta-small-viewmore {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 10px 30px;
+  margin: 5px;
+  border-color: #ffff;
+  border: 1px solid;
+  text-align: center;
+  float: right;
 }
 
 .cta-small:hover {
   color: #f06332;
 }
 
-.view-more {
-  grid-column: -1/1;
-  position: absolute;
-  padding: 10px 10px;
-  margin: 5px;
-  border: 1px solid;
-  border-color: #ffff;
-  top: 55px;
-  right: 21px;
+/* Navigation */
+
+.main-nav-1 ul {
+  display: grid;
+  grid-gap: 0px;
+  padding: 5px 10px 10px 5px;
+  list-style: none;
+  grid-template-columns: repeat(4, 100px);
+  justify-content: left;
 }
 
-.view-more:hover {
+.main-nav-1 a {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-nav-1 a:hover {
   color: #f06332;
 }
 
-.hot-now,
-.discover,
-.news,
-.pre-purchase,
-.sell {
-  color: white;
+.main-nav-2 ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 10px 5px 10px 5px;
+  list-style: none;
+  grid-template-columns: repeat(4, auto);
 }
 
-h2 {
-  font-size: 1.2em;
-  font-style: normal;
-  font-weight: 500;
-}
-
-#hamburger-menu:checked ~ nav {
+.main-nav-2 a {
   display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-nav-2 a:hover {
+  color: #f06332;
+}
+
+.logo {
+  cursor: pointer;
+  max-width: 110px;
+  grid-column: 2;
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+  align-items: center;
+}
+
+.fa-bars {
+  display: none;
 }
 
 #hamburger-menu {
   display: none;
 }
 
-.mainheader {
-  justify-content: space-evenly;
+.icons {
+  display: grid;
+  grid-gap: 20px;
+  padding: 10px;
+  grid-template-columns: repeat(2, 20px);
 }
 
-nav {
-  display: none;
+.fa-heart {
+  color: #f06332;
+  font-size: 20px;
 }
 
-.fa-bars {
-  display: block;
+.fa-heart:hover {
+  color: #ffff;
+}
+
+.fa-shopping-bag {
+  color: #f06332;
+  font-size: 20px;
+}
+
+.fa-shopping-bag:hover {
+  color: #ffff;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.menu {
+  display: grid;
+  grid-gap: 10px;
+  box-sizing: border-box;
+  background: #404040;
+  padding: 10px;
+}
+
+.container_textheader {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  color: #b9b8b8;
+  font-size: 0.5em;
+  font-style: normal;
+  font-weight: 200;
+  width: auto;
+  padding: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-nav-2 {
+  grid-column: 4;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.main-nav-1 {
+  grid-column: 1;
+  align-items: center;
+}
+
+.icons {
+  grid-column: 4;
+  justify-self: center;
+  align-items: center;
+}
+
+.search {
+  font-size: 1em;
+  border: 1px solid;
+  border-color: #ffff;
+  border-radius: 50px;
+  padding: 5px 40px;
+  margin: 20px;
+}
+
+.fa-search {
+  margin: 10px;
+}
+
+.back-search {
+  display: grid;
+  justify-content: right;
+}
+
+.back-search :hover {
+  color: #f06332;
+}
+
+/* Homepage HEADER */
+
+.top-container {
+  background-image: url("../images/Header-2.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  position: relative;
+  background-position: center;
+}
+
+.covergame {
+  position: absolute;
+  top: 400px;
+  left: 800px;
+  text-align: center;
+}
+
+.top-container h1 {
+  font-size: 2em;
+  padding: 10px;
+  width: 400px;
+  margin: 20px 0px;
+  font-weight: bolder;
+  color: #ffff;
+  background-color: #404040;
+}
+
+.top-container p {
+  font-size: 1.3em;
+  color: #ffff;
 }
 
 /* HOT NOW */
-
 .hot-now {
   display: grid;
-  grid-template-columns: repeat(1fr);
-  padding: 10px 30px;
-  margin: 50px 5px;
-  grid-gap: 10px 50px;
-}
-
-.hot-now > div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr 2fr);
-  grid-auto-rows: minmax(50px, auto);
-}
-
-.hot-now_products a {
-  grid-column: 1;
-  padding: 10px;
-  width: 100px;
-}
-
-.hot-now_products p {
-  grid-column: 4;
-  justify-items: end;
-}
-
-.hot-now h2 {
-  grid-column: -1/1;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 70px 5px;
 }
 
 .hot-now img {
   width: 100%;
-  grid-column: -1/1;
+}
+
+.hot-now_products a {
+  text-align: left;
+  padding: 10px 30px;
+}
+
+.hot-now_products p {
+  text-align: right;
+  color: #ffff;
+  margin: 10px 40px;
 }
 
 /* DISCOVER */
 
+.discover {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 70px 5px;
+}
+
 .discover-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  grid-column: 1;
+}
+
+.discover-container img {
+  width: 100%;
 }
 
 .discover_gametext {
-  display: flex;
-  flex-direction: column;
-  border-color: #ffff;
   background-color: #707070;
-  flex-basis: 500px;
-  margin: 0px;
+  text-align: left;
 }
 
 .game-header {
   font-size: xx-large;
   text-transform: uppercase;
   position: relative;
-  text-align: center;
-  order: 1;
+  padding: 10px;
 }
 
 .info-product {
   font-size: 1.2em;
-  text-align: center;
   padding: 20px;
   order: 2;
 }
 
-.discover_cta-small {
-  order: 3;
-  width: 50px;
-  align-self: center;
-}
-
-.discover_header {
-  order: 1;
-}
-
-.discover img {
-  width: 500px;
-  margin: 0px;
-  justify-items: left;
+.discover_gametext a {
+  flex-basis: 500px;
+  text-align: left;
 }
 
 /* NEWS */
 
 .news {
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(1fr);
-  padding: 20px 10px;
-  margin: 50px 5px;
-  grid-gap: 50px 70px;
+  padding: 20px;
 }
 
-.news h2 {
-  grid-column: -1/1;
-}
-
-.news > div {
+.news_boxes {
   display: grid;
-  grid-template-columns: repeat(2, 1fr 2fr);
-  grid-auto-rows: minmax(70px 100px);
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20 px;
+  margin: 30px 5px;
 }
 
 .news img {
   width: 100%;
-  grid-column: -1/1;
 }
 
-.news_products a {
-  grid-column: 1;
-  padding: 10px;
-  width: 100px;
+.news a {
+  text-align: center;
+  padding: 10px 10px;
+  justify-self: end;
+  grid-column: 4;
+  grid-row: 1;
 }
 
 .news_products p {
-  grid-column: 4;
-  justify-items: end;
-  width: 80px;
+  text-align: right;
+  color: #ffff;
+  margin: 10px 40px;
 }
 
 /* PRE-PURCHASE */
 
 .pre-purchase {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(1fr);
-  padding: 50px 5px;
-  margin: 50px 5px;
-  grid-gap: 50px 70px;
+  padding: 70px 5px;
 }
 
-.pre-purchase h2 {
-  grid-column: -1/1;
-}
-
-.pre-purchase > div {
+.boxes_pre-purchase {
   display: grid;
-  grid-template-columns: repeat(2, 1fr 2fr);
-  grid-auto-rows: minmax(70px 100px);
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px;
+  margin: 30px 5px;
 }
 
 .pre-purchase img {
   width: 100%;
-  border: 1px solid;
-  border-color: #f06332;
-  grid-column: -1/1;
 }
 
-.pre-purchase_products a {
-  grid-column: 1;
-  padding: 10px;
-  position: relative;
-  left: 30px;
-  width: 80px;
-}
-
-.pre-purchase_products p {
+.boxes_pre-purchase a {
+  text-align: center;
+  padding: 10px 10px;
+  justify-self: end;
   grid-column: 4;
-  justify-items: end;
-  width: 80px;
+  grid-row: 1;
 }
 
-/* SELL PAGE */
+.boxes_pre-purchase p {
+  text-align: right;
+  color: #ffff;
+  margin: 10px 40px;
+}
+
+/* SELL YOUR GAME */
+
+.sell {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .sell-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  grid-column: 1;
+}
+
+.sell-container img {
+  width: 100%;
 }
 
 .sell_gametext {
-  display: flex;
-  flex-direction: column;
-  border-color: #ffff;
   background-color: #707070;
-  flex-basis: 500px;
-  margin: 0px;
+  text-align: left;
 }
 
 .game-header {
   font-size: xx-large;
   text-transform: uppercase;
   position: relative;
-  text-align: center;
-  order: 1;
+  padding: 10px;
 }
 
 .info-product {
   font-size: 1.2em;
-  text-align: center;
   padding: 20px;
   order: 2;
 }
 
-.sell_cta-small {
-  order: 3;
-  width: 50px;
-  align-self: center;
-}
-
-.sell img {
-  width: 500px;
-  margin: 0px;
-  justify-items: left;
-}
-
-/* links */
-a {
-  text-decoration: none;
-}
-
-/* footer */
-footer {
-  color: #ffff;
+.sell_gametext a {
+  flex-basis: 500px;
   text-align: left;
 }
 
-/* media */
+@media (max-width: 1200px) {
+  /* HOMEPAGE HEADER */
 
-@media (min-width: 600px) {
-  .welcome {
+  .top-container {
     min-height: 60vh;
   }
 
-  .fa-heart {
-    left: 700px;
-    font-size: 20px;
-  }
-  .fa-shopping-bag {
-    left: 740px;
-    font-size: 20px;
-  }
-  .welcome_content {
-    top: 200px;
-    left: 500px;
-  }
-  .cta_big {
-    font-size: 0.8em;
-  }
-  .discover_gametext {
-    flex-basis: 800px;
-  }
-  .discover img {
-    width: 590px;
+  .covergame {
+    position: absolute;
+    top: 270px;
+    left: 10px;
+    text-align: center;
   }
 
-  .discover-container {
-    justify-content: left;
+  .top-container h1 {
+    font-size: 1.2em;
+    width: 200px;
+    background-color: #b9b8b8;
+    color: #282828;
+    justify-items: center;
   }
 
+  .top-container p {
+    display: none;
+  }
+
+  /* HOT NOW  */
   .hot-now {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
   }
 
-  .discover-container {
-    flex-wrap: nowrap;
-    position: relative;
-  }
-
-  .discover_gametext {
-    flex-basis: 90x;
-    height: 280px;
-    flex-direction: row;
-  }
-
-  .discover img {
-    width: 500px;
-  }
-
-  .info-product {
-    font-size: 0.2em;
-    width: 250px;
-    position: absolute;
-    left: 550px;
-    top: 50px;
+  /* DISCOVER */
+  .discover {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
   }
 
   .discover_cta-small {
-    order: 3;
-    width: 20px;
-    align-self: center;
     position: absolute;
-    left: 630px;
-    top: 170px;
   }
 
-  .game-header {
-    font-size: 1em;
-    position: absolute;
-    left: 620px;
-    top: 10px;
-  }
-
-  .info-product {
-    font-size: 1em;
-  }
-
-  .news {
+  /* NEWS */
+  .news_boxes {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
   }
 
-  .pre-purchase {
+  /* PRE-PURCHASE */
+  .boxes_pre-purchase {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
   }
 
-  .sell-container {
-    flex-wrap: nowrap;
-    position: relative;
-  }
-
-  .sell_gametext {
-    flex-basis: 90x;
-    height: 280px;
-    flex-direction: row;
-  }
-
-  .sell img {
-    width: 500px;
+  /*  SELL YOUR GAME */
+  .sell {
+    grid-template-columns: 1fr;
   }
 
   .sell_cta-small {
-    order: 3;
-    width: 20px;
-    align-self: center;
     position: absolute;
-    left: 630px;
-    top: 170px;
   }
 }
 
-@media (min-width: 890px) {
-  h1 {
-    width: 500px;
-    text-align: start;
+@media (max-width: 700px) {
+  /*  NAVIGATION */
+
+  .main-nav-2 a {
+    font-size: 10px;
   }
 
-  h2 {
-    font-size: 1.8em;
+  .main-nav-1 {
+    display: none;
   }
 
-  .fa-heart {
-    left: 1300px;
-    font-size: 20px;
-  }
-
-  .fa-shopping-bag {
-    left: 1340px;
-    font-size: 20px;
-  }
-
-  .hot-now {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  nav {
+  #hamburger-menu:checked ~ .main-nav-1 {
     display: block;
   }
 
-  .discover-container {
-    flex-wrap: nowrap;
-    position: relative;
-  }
-
-  .discover img {
-    width: 900px;
-  }
-
-  .discover_gametext {
-    flex-basis: 900px;
+  .main-nav-1 ul {
+    display: flex;
     flex-direction: column;
-    height: 505px;
   }
 
-  .info-product {
-    position: absolute;
-    left: 1015px;
-    top: 100px;
-  }
-  .discover_cta-small {
-    position: absolute;
-    left: 1060px;
-    top: 250px;
-  }
-
-  .game-header {
-    position: absolute;
-    left: 1015px;
-    top: 40px;
-    font-size: x-large;
-  }
-
-  .sell-container {
-    flex-wrap: nowrap;
-    position: relative;
-  }
-
-  .sell img {
-    width: 900px;
-  }
-
-  .sell_gametext {
-    flex-basis: 900px;
-    flex-direction: column;
-    height: 505px;
-  }
-
-  .info-product {
-    position: absolute;
-    left: 1000px;
-    top: 100px;
-  }
-  .sell_cta-small {
-    position: absolute;
-    left: 1055px;
-    top: 250px;
-  }
-
-  .news {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .pre-purchase {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .welcome {
-    background-size: cover;
-    min-height: 90vh;
-  }
-
-  .welcome_content {
-    top: 400px;
-    left: 1000px;
-  }
-
-  .welcome h1 {
-    font-size: 1em;
-    width: 400px;
-  }
-
-  .cta_big {
-    font-size: 2em;
-  }
-
-  .hamburger-menu_nav {
-    display: none;
-  }
-
-  .mainheader {
-    justify-content: left;
+  .main-nav-1 li {
+    padding: 10px;
   }
 
   .fa-bars {
+    display: block;
+    font-size: 35px;
+    color: #f06332;
+    grid-column: 1;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    grid-column: 3;
+  }
+
+  /* HOMEPAGE HEADER */
+  .top-container {
+    min-height: 40vh;
+  }
+
+  .covergame {
+    position: absolute;
+    top: 160px;
+    left: 10px;
+    text-align: center;
+  }
+
+  .top-container h1 {
+    font-size: 1em;
+    width: 150px;
+    background-color: #b9b8b8;
+    color: #282828;
+    justify-items: center;
+  }
+
+  .top-container p {
     display: none;
   }
 
-  .cta-small {
-    font-size: 1em;
-    padding: 10px 50px;
-    width: 60px;
+  /* HOT NOW  */
+  .hot-now {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  /* DISCOVER */
+  .discover {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+
+  .discover_cta-small {
+    position: absolute;
+  }
+
+  /* NEWS */
+  .news_boxes {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  /* PRE-PURCHASE */
+  .boxes_pre-purchase {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  /*  SELL YOUR GAME */
+  .sell {
+    grid-template-columns: 1fr;
+  }
+
+  .sell_cta-small {
+    position: absolute;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-nav-2 a {
+    font-size: 0.4em;
+  }
+
+  .main-nav-1 {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ .main-nav-1 {
+    display: block;
+  }
+
+  .main-nav-1 ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav-1 li {
+    padding: 5px;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 35px;
+    color: #f06332;
+    grid-column: 1;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    grid-column: 3;
+  }
+
+  .container_textheader {
+    font-size: 0.3em;
   }
 }

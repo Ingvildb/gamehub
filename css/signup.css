@@ -188,6 +188,42 @@ h2 {
   align-items: center;
 }
 
+.search-btn {
+  font-size: 1em;
+  border: 1px solid;
+  border-color: #ffff;
+  border-radius: 50px;
+  padding: 5px 40px;
+  margin: 0px 20px 30px 0px;
+}
+
+.fa-chevron-left {
+  font-size: 2em;
+}
+
+.fa-search {
+  margin: 10px;
+}
+
+.back {
+  display: grid;
+  justify-content: left;
+  padding: 10px;
+}
+
+.back :hover {
+  color: #f06332;
+}
+
+.search {
+  display: grid;
+  justify-content: right;
+}
+
+.back-search :hover {
+  color: #f06332;
+}
+
 /* SIGN UP form */
 
 main h1 {
@@ -266,6 +302,19 @@ input {
     display: none;
   }
 
+  #hamburger-menu:checked ~ .main-nav-1 {
+    display: block;
+  }
+
+  .main-nav-1 ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav-1 li {
+    padding: 10px;
+  }
+
   .fa-bars {
     display: block;
     font-size: 35px;
@@ -288,5 +337,58 @@ input {
 
   input {
     padding: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-nav-2 a {
+    font-size: 0.4em;
+  }
+
+  .main-nav-1 {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ .main-nav-1 {
+    display: block;
+  }
+
+  .main-nav-1 ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav-1 li {
+    padding: 5px;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 35px;
+    color: #f06332;
+    grid-column: 1;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    grid-column: 3;
+  }
+
+  .container_textheader {
+    font-size: 0.3em;
+  }
+
+  .form {
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+  }
+
+  .cta-big {
+    padding: 20px 30px;
+    font-size: 0.5em;
+  }
+
+  main h1 {
+    font-size: 2em;
   }
 }
